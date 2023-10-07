@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity" android:orientation="vertical">
+    <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/balanceView"
+            android:layout_margin="@dimen/string_view_margin"/>
+    <com.google.android.material.chip.ChipGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" app:checkedChip="@id/cadChip" android:id="@+id/currencyChips">
+
+        <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/cadChip" android:text="CAD"
+                style="@style/Widget.MaterialComponents.Chip.Choice"/>
+        <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/eurChip" android:text="EUR"
+                style="@style/Widget.MaterialComponents.Chip.Choice"/>
+    </com.google.android.material.chip.ChipGroup>
+    <Button
+            android:text="@string/inc_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/incrementButton"/>
+    <Button
+            android:text="@string/reset_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/resetButton"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/recentCommands"
+            android:layout_margin="@dimen/string_view_margin"/>
+</LinearLayout>
